@@ -1,0 +1,445 @@
+h1 {
+  display: flex;
+  flex-flow: wrap;
+  font: 200;
+  font-size: 4rem;
+  font-family: "Overpass";
+  padding: 10;
+  margin: 8rem;
+  color: #ffffff;
+  justify-content: center;
+  margin-top: 19rem;
+  overflow: hidden;
+  /* position: absolute; */
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  /*background: url("/img/p_noise1.png");*/
+  background-size: 250%;
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 1rem;
+  font-family: "Montserrat";
+  padding: 1rem;
+  margin: 1rem;
+  color: rgb(255, 255, 255);
+  z-index: -1;
+}
+
+#backVid {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+#backVid2 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  background-blend-mode: darken;
+}
+
+#pauseVidBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.about {
+  font-size: 2rem;
+  padding: 4rem;
+  font-family: "Montserrat";
+}
+
+/* Spotify Cards */
+
+.spcard .row {
+  display: flex;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.spcard {
+  display: flex;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.spcard-1 {
+  scale: 85%;
+  display: flex;
+  flex-grow: 0;
+  padding: 0.1rem;
+  width: 450px;
+  min-width: 400px;
+  flex-wrap: wrap;
+}
+
+.sccard {
+  display: flex;
+  padding: 0rem;
+  margin: 0%;
+  justify-content: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .spcard {
+    flex-direction: row;
+  }
+}
+
+.reel .row {
+  height: 2vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding: 4rem;
+  margin: 0rem;
+}
+
+/* gallery (adapted from https://codesandbox.io/s/fast-sun-357ccd?file=/style.css:120-178) */
+.container {
+  padding: 40px 5%;
+  margin: 0%;
+}
+
+.img-gallery {
+  display: flex;
+  /*single column for mobile*/
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img-gallery .column {
+  display: flex;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img-item img {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+  scale: 100%;
+}
+
+.img-item img .flip-orient {
+  orientation: landscape;
+}
+
+.img-gallery .img-item {
+  object-fit: inherit;
+  max-width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
+  flex-shrink: 2;
+}
+
+/*.img-gallery li video {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
+}*/
+
+@media only screen and (min-width: 768px) {
+  .img-gallery {
+    flex-direction: row;
+  }
+}
+
+.contact {
+  font-size: 18px;
+  padding: 1rem;
+  margin: 5rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.topnav {
+  background-color: rgba(0, 0, 0, 0.845);
+  overflow: hidden;
+  position: fixed;
+  top: 0.7rem;
+  z-index: 1;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  justify-self: center;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ff9b18;
+  color: white;
+}
+/*===============================================*/
+
+/*SYNTH STYLE*/
+
+button {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+select {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+div#filterOptions {
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+div#filterOptions div {
+  float: left;
+  margin: 10px 6px; /*When using "margin" and 2 values, you have a shortcut: the first number applies to top and bottom; the second number applies to left and right */
+  color: rgb(200, 200, 200);
+  padding: 10px;
+}
+
+div#adsrDiv {
+  clear: left;
+  margin: 2% auto;
+  width: 50%;
+  color: rgb(200, 200, 200);
+}
+
+div#adsrLabels,
+div#adsrSlider {
+  float: left;
+  width: 45%;
+}
+div#adsrLabels {
+  line-height: 1.75rem;
+}
+
+div#synthType {
+  clear: left;
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: 75%;
+  color: rgb(200, 200, 200);
+}
+
+div#keyboardDiv {
+  display: flex; /*===== FLEXBOX!! =====*/
+  margin: auto;
+  justify-content: center;
+  align-items: flex-start;
+  width: 75%;
+}
+
+.key {
+  float: left;
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.key p {
+  position: relative;
+  text-align: center;
+  margin: 15% auto; /* Giving 2 values to the 'margin' property is a shortcut: the first value applies to top and bottom; the second to left and right */
+
+  overflow-wrap: break-word;
+}
+
+.whiteKey {
+  height: 300px;
+  z-index: 1; /* order of placement on the Z-axis; the higher the number, the further to the front an element is placed */
+  width: 20.5%;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.whiteKey:hover,
+.whiteKey:focus {
+  background-color: pink;
+}
+
+.whiteKey:active {
+  background-color: deeppink;
+}
+
+.blackKey {
+  position: absolute;
+  width: 5.5%;
+  height: 200px;
+  z-index: 2;
+  background-color: black;
+  color: white;
+}
+
+.blackKey:hover,
+.blackKey:focus {
+  background-color: deepskyblue;
+}
+
+.blackKey:active {
+  background-color: royalblue;
+}
+
+#key1 {
+  left: 17%;
+}
+
+#key3 {
+  left: 26%;
+}
+
+#key6 {
+  left: 39%;
+}
+
+#key8 {
+  left: 47.5%;
+}
+
+#key10 {
+  left: 55.5%;
+}
+
+#key13 {
+  left: 68.5%;
+}
+
+#key15 {
+  left: 77.5%;
+}
+
+/*
+
+.flex-sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#column {
+  flex-direction: column;
+  justify-items: left;
+}
+.flex-sidebar-text {
+  flex-direction: column;
+  font: 200;
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  float: left;
+  text-align: center;
+  margin: auto;
+  color: rgb(255, 125, 125);
+  list-style: none;
+  padding: 0;
+}
+
+.flex-sidebar-item {
+  flex-direction: column;
+  background-color: rgba(255, 113, 113, 0.89);
+  padding: 0px;
+  justify-content: left;
+  justify-self: left;
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin: auto;
+  padding: 0;
+}
+
+/* Large */
+.flex-sidebar {
+  display: flex;
+  flex-flow: row wrap;
+
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .flex-sidebar {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .flex-sidebar {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: row;
+  }
+}
+
+/*
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.item {
+  order: 4;
+  flex-basis: auto;
+}
+
+.parent {
+  display: flex;
+  height: 300px; /* Or whatever 
+}
+
+.child {
+  width: 100px; /* Or whatever 
+  height: 100px; /* Or whatever 
+  margin: auto; /* Magic! 
+}
+
+*/
